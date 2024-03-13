@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 4: Reservation Request</title>
+
+    <link rel="stylesheet" href="../css/site.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="salestaxcalculator.html">Part 1: Sales Tax Calculator</a></li>
+            <li><a href="changecalculator.html">Part 2: Change Calculator</a></li>
+            <li><a href="incometaxcalculator.html">Part 3: Income Tax Calculator</a></li>
+            <li><a href="reservationrequest.html">Part 4: Reservation Request</a></li>
+        </ul>
+    </nav>
+    <br>
+
+    <form>
+        <fieldset>
+            <legend>Reservation Request</legend>
+
+            <fieldset>
+                <legend>General Information</legend>
+
+                <label for="arrivalDate">Arrival date: </label>
+                <input type="date" id="arrivalDate" name="arrivalDate"><br>
+
+                <label for="nights">Nights: </label>
+                <input type="number" id="nights" name="nights" min="1" value="1">
+                <span class="inputRequirement">Must be numeric.</span><br>
+
+                <label for="adults">Adults: </label>
+                <select id="adults" name="adults" value="1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+                <br>
+
+                <label for="children">Children: </label>
+                <select id="children" name="children" value="0">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+
+                <label for="roomType">Room type: </label>
+                <input type="radio" id="standard" name="roomType" value="standard">
+                <label for="standard">Standard</label>
+                <input type="radio" id="business" name="roomType" value="business">
+                <label for="business">Business</label>
+                <input type="radio" id="suite" name="roomType" value="suite">
+                <label for="suite">Suite</label>
+                <br>
+
+                <label for="bedType">Bed Type: </label>
+                <input type="radio" id="king" name="bedType" value="king">
+                <label for="king">King</label>
+                <input type="radio" id="doubleDouble" name="bedType" value="doubleDouble">
+                <label for="doubleDouble">Double Double</label>
+                <br>
+
+                <input type="checkbox" id="smoking" name="smoking" value="smoke">
+                <label for="smoking">Smoking</label>
+                <br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" size="30" placeholder="First Last"><br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="username@domain.com" size="30">
+                <span class="inputRequirement">Must be a valid email address.</span><br>
+
+                <label for="phoneNumber">Phone: </label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="123-456-7890" required>
+                <span class="inputRequirement">This field is required.</span><br>
+
+            </fieldset>
+
+            <br>
+            <button type="submit" id="submit" name="submit">Submit Request</button><br>
+
+            <label class="copyright">&copy; NeilMartinez/n01405352 2024</label>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

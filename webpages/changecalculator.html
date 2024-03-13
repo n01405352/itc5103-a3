@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 2: Change Calculator</title>
+
+    <link rel="stylesheet" href="../css/site.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="salestaxcalculator.html">Part 1: Sales Tax Calculator</a></li>
+            <li><a href="changecalculator.html">Part 2: Change Calculator</a></li>
+            <li><a href="incometaxcalculator.html">Part 3: Income Tax Calculator</a></li>
+            <li><a href="reservationrequest.html">Part 4: Reservation Request</a></li>
+        </ul>
+    </nav>
+    <br>
+
+    <form>
+        <fieldset>
+            <legend>Change Calculator</legend>
+            <label for="changeDue">Enter amount of change due (0-99): </label>
+            <input type="text" id="changeDue" name="changeDue" min="0" max="99" placeholder="00">
+            <button type="button" id="calculate" name="calculate">Calculate</button><br>
+
+            <label for="quarters">Quarters: </label>
+            <input type="text" id="quarters" name="quarters"><br>
+
+            <label for="dimes">Dimes: </label>
+            <input type="text" id="dimes" name="dimes"><br>
+
+            <label for="nickels">Nickels: </label>
+            <input type="text" id="nickels" name="nickels"><br>
+
+            <label for="pennies">Pennies: </label>
+            <input type="text" id="pennies" name="pennies"><br>
+
+            <label class="copyright">&copy; NeilMartinez/n01405352 2024</label>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 1: Sales Tax Calculator</title>
+
+    <link rel="stylesheet" href="../css/site.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="salestaxcalculator.html">Part 1: Sales Tax Calculator</a></li>
+            <li><a href="changecalculator.html">Part 2: Change Calculator</a></li>
+            <li><a href="incometaxcalculator.html">Part 3: Income Tax Calculator</a></li>
+            <li><a href="reservationrequest.html">Part 4: Reservation Request</a></li>
+        </ul>
+    </nav>
+    <br>
+
+    <form>
+        <fieldset>
+            <legend>Sales Tax Calculator</legend>
+            <label class="formdescription">Enter Subtotal and Tax Rate and click "Calculate".</label> <br>
+
+            <label for="subtotal">Subtotal: </label>
+            <input type="text" id="subtotal" name="subtotal" placeholder="0000.00"><br>
+
+            <label for="taxRate">Tax Rate: </label>
+            <input type="text" id="taxRate" name="taxRate" value="13"><br>
+
+            <label for="salesTax">Sales Tax: </label>
+            <input type="text" id="salesTax" name="salesTax"><br>
+
+            <label for="total">Total: </label>
+            <input type="text" id="total" name="total"><br>
+
+            <button type="button" id="calculate" name="calculate">Calculate</button>
+            <button type="reset" id="clear" name="clear">Clear</button><br>
+
+            <label class="copyright">&copy; NeilMartinez/n01405352 2024</label>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
