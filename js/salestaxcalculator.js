@@ -28,9 +28,17 @@ const processEntries = () => {
     }
 };
 
-const clearEntries = () => {
+const clearSubtotal = () => {
     $("#subtotal").value = "";
+}
+
+const clearTaxRate = () => {
     $("#taxRate").value = "";
+}
+
+const clearEntries = () => {
+    const clSubtotal = clearSubtotal();
+    const clTaxRate = clearTaxRate();
     $("#subtotal").focus();
 }
 
@@ -38,5 +46,8 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("The DOM is ready!");
     $("#calculate").addEventListener("click", processEntries);
     $("#clear").addEventListener("click", clearEntries);
+    $("#subtotal").addEventListener("click", clearSubtotal);
+    $("#taxRate").addEventListener("click", clearTaxRate);
+
     $("#subtotal").focus();
 });
