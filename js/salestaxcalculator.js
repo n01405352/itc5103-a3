@@ -36,19 +36,19 @@ const processEntries = () => {
 // Clear Subtotal text box
 const clearSubtotal = () => {
     $("#subtotal").value = "";
-}
+};
 
 // Clear Tax Rate text box
 const clearTaxRate = () => {
     $("#taxRate").value = "";
-}
+};
 
 // For clear button
 const clearEntries = () => {
     const clSubtotal = clearSubtotal();
     const clTaxRate = clearTaxRate();
     $("#subtotal").focus();
-}
+};
 
 // DOMContentLoaded event handler
 document.addEventListener("DOMContentLoaded", () => {
