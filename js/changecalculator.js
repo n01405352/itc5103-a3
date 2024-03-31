@@ -37,7 +37,7 @@ const makeChange = userEntry => {
 const processEntry = () => {
     const changeDue = parseInt($("#changeDue").value); // Get user's entry
 
-    // Verify  number between 0 and 99
+    // Verify number between 0 and 99
     if (isNaN(changeDue) || changeDue < 0 || changeDue > 99) {
         const errMsg = errorMessage();
     } else {
