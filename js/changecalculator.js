@@ -33,7 +33,7 @@ const makeChange = userEntry => {
     $("#pennies").value = pennies;
 };
 
-// Event handler processEntry
+// processEntry event handler
 const processEntry = () => {
     const changeDue = parseInt($("#changeDue").value); // Get user's entry
 
