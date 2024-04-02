@@ -14,23 +14,24 @@ const focusAndSelect = selector => {
 const processEntries = () => {
     // Get user's entries
     // General Information
-    const arrivalDate = $("#arrivalDate").value;
-    const nights = parseInt($("#nights").value);
-    const adults = parseInt($("#adults").value);
-    const children = parseInt($("#children").value);
+    const arrivalDate = $("#arrivalDate").value.trim();
+    const nights = parseInt($("#nights").value.trim());
+    const adults = parseInt($("#adults").value.trim());
+    const children = parseInt($("#children").value.trim());
     // Preferences
-    const standard = $("#standard").value;
-    const business = $("#business").value;
-    const suite = $("#suite").value;
-    const king = $("#king").value;
-    const doubleDouble = $("#doubleDouble").value;
-    // const smoking = $("smoking").value;
+    const standard = $("#standard").value.trim();
+    const business = $("#business").value.trim();
+    const suite = $("#suite").value.trim();
+    const king = $("#king").value.trim();
+    const doubleDouble = $("#doubleDouble").value.trim();
+    // const smoking = $("smoking").value.trim();
     // Contact Information
-    const name = $("#name").value;
-    const email = $("#email").value;
-    const phoneNumber = $("#phoneNumber").value;
+    const name = $("#name").value.trim();
+    const email = $("#email").value.trim();
+    const phoneNumber = $("#phoneNumber").value.trim();
 
 
+    // Validate user entries
     // Verify values are not empty
     let errorMessage = "";
 
@@ -78,7 +79,7 @@ const processEntries = () => {
 // DOMContentLoaded event handler
 document.addEventListener("DOMContentLoaded", () => {
     console.log("The DOM is ready!");
-    $("#submit").addEventListener("click", processEntries);
+    $("#submit").addEventListener("click", processEntries); // Submit the form
 
     $("#arrivalDate").focus(); // Move cursor to arrivalDate on application start
 });
