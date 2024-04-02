@@ -1,13 +1,16 @@
 "use strict";
 
+// Get the object for the HTML element that's specified by the CSS selector
 const $ = selector => document.querySelector(selector);
 
+// Cursor focus and select
 const focusAndSelect = selector => {
     const elem = $(selector);
     elem.focus();
     elem.select();
 };
 
+// processEntries function
 const processEntries = () => {
     // Get user's entries
     // General Information
@@ -26,7 +29,6 @@ const processEntries = () => {
     const name = $("#name").value;
     const email = $("#email").value;
     const phoneNumber = $("#phoneNumber").value;
-
 
 
     // Verify values are not empty
@@ -73,6 +75,7 @@ const processEntries = () => {
 
 };
 
+// DOMContentLoaded event handler
 document.addEventListener("DOMContentLoaded", () => {
     console.log("The DOM is ready!");
     $("#submit").addEventListener("click", processEntries);
